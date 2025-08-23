@@ -21,7 +21,7 @@ function App() {
             clothing, accessories and much
           </p>
           {data.map((item, index) => (
-            <div key={index}>
+            <div key={index} className="cardes">
               <div className="cards">
                  <div>
 
@@ -33,7 +33,7 @@ function App() {
                   <h1>{item.title}</h1>
                   <p>{item.description}</p>
                     </div>
-                    
+
               </div>
             </div>
           ))}
