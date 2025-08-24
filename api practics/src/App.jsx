@@ -20,23 +20,34 @@ function App() {
             Men's Kurta Online Shopping, Men's shoes online shopping, Men's
             clothing, accessories and much
           </p>
+
+          <div className="cards">
+
+
           {data.map((item, index) => (
             <div key={index} className="cardes">
-              <div className="cards">
-                 <div>
-
+              <div className="card"  >
+               
                   <img
                     src={item.images[0]}
                     alt="product image"
                     className="productimg"
-                    />
-                  <h1>{item.title}</h1>
-                  <p>{item.description}</p>
-                    </div>
+                  />
+                  <h2 className="price" >${item.price}</h2>
+                  <h3>{item.title}  </h3>
+                  <p>{item.name}  </p>
+                  {/* {
+                    data.category.map((item , index ) => (
 
+                      <h1 key={index}> {item.slug} </h1>
+
+                    ))} */}
+                
+                
               </div>
             </div>
           ))}
+          </div>
         </div>
       </div>
     </>
