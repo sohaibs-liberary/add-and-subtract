@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Postinfo from "./Components/Postinfo";
 
 function App() {
   const [data, setData] = useState([]);
@@ -25,8 +26,8 @@ function App() {
 
 
           {data.map((item, index) => (
-            <div key={index} className="cardes">
-              <div className="card"  >
+            <div key={index}>
+              <div className="card" onClick={Postinfo}  >
                
                   <img
                     src={item.images[0]}
@@ -50,6 +51,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Postinfo/>
     </>
   );
 }

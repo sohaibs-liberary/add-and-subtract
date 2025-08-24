@@ -6,7 +6,7 @@
 }
 .name{
   text-align: center;
-  color: blue;
+  color: rgb(228, 215, 215);
   font-size: 90px;
 }
 .about{
@@ -28,7 +28,7 @@
 }
 /*Cards inslde design*/
 .card{     
- 
+
   height: auto;
   width: auto;
   /* margin: 40px; */
