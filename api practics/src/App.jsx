@@ -27,12 +27,13 @@ function App() {
 
           {data.map((item, index) => (
             <div key={index}>
-              <div className="card" onClick={Postinfo}  >
+              <div className="card"  >
                
                   <img
                     src={item.images[0]}
                     alt="product image"
                     className="productimg"
+                    onClick={Postinfo}  
                   />
                   <h2 className="price" >${item.price}</h2>
                   <h3>{item.title}  </h3>

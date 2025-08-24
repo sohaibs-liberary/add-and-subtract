@@ -6,7 +6,7 @@ function Postinfo() {
     const [data , setData]= useState([]);
 
     useEffect(()=>{
-        fetch("https://api.escuelajs.co/api/v1/products")
+        fetch("https://api.escuelajs.co/api/v1/products/:id")
         .then((responsive)=>responsive.json())
         .then((data)=>setData(data))
         .catch((error)=>console.error('this is an error during fetch api ',error))
@@ -16,8 +16,8 @@ function Postinfo() {
 
     return (
         <div>
-             
-                       
+
+
 
         </div>
     );

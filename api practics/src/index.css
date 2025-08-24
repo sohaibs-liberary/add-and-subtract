@@ -37,6 +37,7 @@
   border-radius: 4%;
   font-size:larger;
   display: flex-col;
+  cursor: pointer;
  
   
 }
